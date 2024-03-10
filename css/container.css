@@ -1,0 +1,187 @@
+.container1,
+.container2,
+.container3,
+.container4,
+.container5 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  transition: 2s ease-in-out;
+  
+}
+
+ul {
+  width: 100px;
+}
+li {
+  width: 800px;
+}
+/* 1 */
+.container1 {
+  grid-area: 2/2/3/3;
+  background: url(../img/月球5.jpg) no-repeat 30% 40%;
+}
+
+.container1:hover {
+  box-shadow: inset 0 0 20px #21edff;
+  width: 800px;
+  margin-top: 100px;
+}
+
+/* 2 */
+.container2 {
+  grid-area: 3/2/4/3;
+  background: url(../img/月球4.jpg) no-repeat 30% 50%;
+  background-size: 200%;
+}
+.container2:hover {
+  width: 800px;
+  box-shadow: inset 0 0 20px #21edff;
+}
+
+.text1 {
+  position: relative;
+  top: -83px;
+  left: -100%;
+  width: 100%;
+  height: 90%;
+  bottom: 0;
+  transition: 2s;
+}
+.container2:hover .text1 {
+  box-shadow: 600px 0px 5000px #3471aabf;
+}
+
+/* 3 */
+.container3 {
+  grid-area: 4/2/5/3;
+  background: url(../img/月球2.jpg) no-repeat 30% 0%;
+}
+
+.container3:hover {
+  width: 800px;
+  box-shadow: inset 0 0 20px #21edff;
+}
+
+.detail{
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.skille{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center ;
+  width: 800px;
+  row-gap: 30px;
+}
+
+.skille .item {
+  background: #21ecff91;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px;
+  position: relative;
+}
+/* 万能的伪元素 */
+.skille .item::before{
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  border: 5px solid #a6dbe8;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  left: 0;
+  top: 0;
+} 
+
+.skille .item.level1::before{
+  border-top-color: #17c0eb;
+}
+.skille .item.level2::before{
+  border-top-color: #17c0eb;
+  border-right-color: #17c0eb;
+}
+.skille .item.level3::before{
+  border-top-color: #17c0eb;
+  border-right-color: #17c0eb;
+  border-bottom-color: #17c0eb;
+}
+.skille .item.level4::before{
+  border-top-color: #17c0eb;
+  border-right-color: #17c0eb;
+}
+.skille .item.level5::before{
+  border-top-color: #17c0eb;
+}
+.skille .item.level::before{
+  border-top-color: #17c0eb;
+  border-right-color: #17c0eb;
+  border-bottom-color: #17c0eb;
+}
+
+
+/* 4 */
+
+.cont-title {
+  color:#17c0eb;
+  border-bottom: 1px solid #01cff9;
+  padding: 10px 10px;
+}
+.cont-text {
+  padding: 20px 0;
+}
+.time-line {
+  position: relative;
+}
+.time-line::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #18dcff;
+  left: 10px;
+  top: 10px;
+}
+.time-line .item {
+  padding-left: 20px;
+  margin: 20px 10px;
+  position: relative;
+}
+
+.time-line .item:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #18dcff;
+  top: 3px;
+  left: -7px;
+}
+
+.gray{
+ color:#45aaf2; 
+}
+
+
+.container4 {
+  margin-bottom: 20px;
+
+  grid-area: 5/2/6/3;
+  background: url(../img/月球.jpg) no-repeat 50% 10%;
+}
+
+.container4:hover {
+  width: 800px;
+  box-shadow: inset 0 0 20px #21edff;
+}

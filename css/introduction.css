@@ -1,0 +1,108 @@
+/* 总盒子 */
+.bin{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-items:center; 
+    align-items: center; 
+    width: 800px;
+    height: 325px;
+    grid-area: 1/2/2/3;
+    margin-top: 150px;
+    background: url(../img/电路.jpg) no-repeat 50%;
+    box-shadow: 10px 15px #979797;
+    border-radius: 5px;   
+    box-shadow:inset  0 0 20px #21edff;
+}
+/* 左 */
+.bin P{
+    color:#21edff ;
+    width: 200px;
+    height: 30px;
+    cursor:pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+    line-height: 30px; 
+    box-shadow: 5px 8px 10px #3471aa;
+    transition: 0.3s ease-in-out;   
+}
+
+.bin P:hover{
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(to right, #273c75, #485460c7);
+    border-bottom:1px solid #21edff;
+    color: #dfe6e9;
+}
+.infor{
+    margin-top: 0px;
+}
+
+.infor .icon-youxiang{
+    font-size: 4em;
+    color: #d9cb71;
+    
+}
+
+
+/* 右 */
+.tx{
+    width: 220px;
+    height: 220px;
+    z-index: 100;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tx:hover{
+    box-shadow:  0 0 50px #21edff;
+    transition: 0.8s ease-in-out;
+    border: 1px solid #21edff;
+}
+.tx img:hover{
+    width: 230px;
+    height: 230px;
+    
+}
+.tx img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.xx{
+    display: block;
+    width: 240px;
+    height: 40px;
+    color:#21edff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    box-shadow: 5px 8px 10px #3471aa;
+    background: linear-gradient(to right, #273c75c1, #485460c7);
+}
+
+.cc{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    height: 300px;
+  
+}
+.n{
+    color:#21edff ;
+    width: 100px;
+    height: 30px;
+    cursor:pointer;
+    margin-top: 20px;
+    line-height: 30px; 
+    box-shadow: 5px 8px 10px #3471aa;
+    transition: 0.3s ease-in-out;   
+}
+.n:hover{
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(to right, #273c75, #485460c7);
+    border-bottom:1px solid #21edff;
+    color: #dfe6e9;
+}

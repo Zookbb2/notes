@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    list-style: none;
+}
+
+html{font-size: 14px;
+    line-height:1.5 ;
+    letter-spacing: 1px;
+}
+body{
+    display:flex;
+    flex: 0 0 800px;
+    justify-content: center;
+
+}
+
+.blog{
+    margin-top: 50px;
+    width: 1000px;
+    border-radius: 50px;
+    display:grid;
+    grid-template-columns: 20% 80% 20%;
+    grid-template-rows: repeat(5, 500px);
+    justify-content:center;
+    background:url(../img/最大月球.jpg) no-repeat 30% 40%;
+    background-size:cover ;
+ 
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+html{
+    scroll-behavior:smooth;
+}
